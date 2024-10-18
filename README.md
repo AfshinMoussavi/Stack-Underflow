@@ -29,12 +29,12 @@ Make sure you have the following installed on your system:
    ```bash
    git clone https://github.com/AfshinMoussavi/Stack-Underflow.git
    ```
-2. **Navigate to the project directory:
+2. **Navigate to the project directory**:
   ```bash
   cd Stack-Underflow
 ```
 
-3. **Create and activate a virtual environment:
+3. **Create and activate a virtual environment**:
   ```bash
     # For Windows
     python -m venv .venv
@@ -44,28 +44,28 @@ Make sure you have the following installed on your system:
     python3 -m venv .venv
     source .venv/bin/activate
 ```
-4. **Install the dependencies:
+4. **Install the dependencies**:
   ```bash
     pip install -r requirements.txt
   ```
 
-5. **Run database migrations:
+5. **Run database migrations**:
   ```bash
   python manage.py migrate
 ```
 
-6. **Load sample data:
+6. **Load sample data**:
 To get started with pre-populated data, load the initial.json file into your database:
   ```bash
   python manage.py loaddata initial_data.json
 ```
 
-7. **Run the development server:
+7. **Run the development server**:
   ```bash
   python manage.py runserver
 ```
 
-8. **Open your browser and navigate to http://127.0.0.1:8000 to start using Stack Underflow!
+8. **Open your browser and navigate to http://127.0.0.1:8000 to start using Stack Underflow**!
 
 
 
