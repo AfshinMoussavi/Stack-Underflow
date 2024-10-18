@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h2 class="card-title">{{ question.title }}</h2>
+            <p class="card-text">{{ question.body }}</p>
+            <p class="text-muted">Created at: {{ question.created_at|date:"Y-m-d" }}</p>
+            <p class="fw-bold">Votes: {{ question.votes }}</p>
+            <p class="text-muted">Posted by: {{ question.user }}</p>
+            <p class="fw-bold">Tags: 
+                {% for tag in question.tags.all %}
+                    <span class="badge bg-secondary">{{ tag.name }}</span>
+                {% endfor %}
+            </p>
+            <div class="btn-group" role="group">
+                <a href="{% url 'questions:question_upvote' question.id %}" class="btn btn-outline-success">Upvote</a>
+                <a href="{% url 'questions:question_downvote' question.id %}" class="btn btn-outline-danger">Downvote</a>
+                {% if flag_update %}
+                <a href="{% url 'questions:question_update' question.id %}" class="btn btn-outline-primary">Update</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <h4>Answers</h4>
+    {% if answers %}
+        <div class="list-group mb-4">
+            {% for answer in answers %}
+                <div class="list-group-item">
+                    <p class="mb-1 answer-text">{{ answer.body }}</p>
+                    <br>
+                    <p class="text-muted">Created at: {{ answer.created_at|date:"Y-m-d" }}</p>
+                    <p class="text-muted">Posted by: {{ answer.user }}</p>
+                    <p class="fw-bold">Votes: {{ answer.votes }}</p>
+                    <div class="btn-group" role="group">
+                        <a href="{% url 'questions:answer_upvote' answer.id %}" class="btn btn-outline-success btn-sm">Upvote</a>
+                        <a href="{% url 'questions:answer_downvote' answer.id %}" class="btn btn-outline-danger btn-sm">Downvote</a>
+                        {% if flag_update %}
+                            <a href="{% url 'questions:answer_update' answer.id %}" class="btn btn-outline-primary btn-sm">Update</a>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="alert alert-info" role="alert">
+            No answers yet. Be the first to answer!
+        </div>
+    {% endif %}
+
+    <h4>Add an Answer</h4>
+    <div class="card p-4 shadow-sm">
+        <form method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <div class="mt-3">
+                <button type="submit" class="btn btn-success w-100">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

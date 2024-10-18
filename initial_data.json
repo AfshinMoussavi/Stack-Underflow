@@ -1,0 +1,452 @@
+[
+    {
+        "model": "users.user",
+        "pk": 1,
+        "fields": {
+            "username": "user1",
+            "email": "user1@example.com",
+            "phone_number": "09123450001",
+            "national_id": "1234567890",
+            "password": "pbkdf2_sha256$260000$hd0d0h2q$+4fHZcHgwSHPxITB3HZ7wlDbsjs="
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 2,
+        "fields": {
+            "username": "user2",
+            "email": "user2@example.com",
+            "phone_number": "09123450002",
+            "national_id": "1234567891",
+            "password": "pbkdf2_sha256$260000$hd0d0h2q$+4fHZcHgwSHPxITB3HZ7wlDbsjs="
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 3,
+        "fields": {
+            "username": "user3",
+            "email": "user3@example.com",
+            "phone_number": "09123450003",
+            "national_id": "1234567892",
+            "password": "pbkdf2_sha256$260000$hd0d0h2q$+4fHZcHgwSHPxITB3HZ7wlDbsjs="
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 4,
+        "fields": {
+            "username": "user4",
+            "email": "user4@example.com",
+            "phone_number": "09123450004",
+            "national_id": "1234567893",
+            "password": "pbkdf2_sha256$260000$hd0d0h2q$+4fHZcHgwSHPxITB3HZ7wlDbsjs="
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 5,
+        "fields": {
+            "username": "user5",
+            "email": "user5@example.com",
+            "phone_number": "09123450005",
+            "national_id": "1234567894",
+            "password": "pbkdf2_sha256$260000$hd0d0h2q$+4fHZcHgwSHPxITB3HZ7wlDbsjs="
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 6,
+        "fields": {
+            "username": "user6",
+            "email": "user6@example.com",
+            "phone_number": "09123450006",
+            "national_id": "1234567895",
+            "password": "pbkdf2_sha256$260000$hd0d0h2q$+4fHZcHgwSHPxITB3HZ7wlDbsjs="
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 7,
+        "fields": {
+            "username": "user7",
+            "email": "user7@example.com",
+            "phone_number": "09123450007",
+            "national_id": "1234567896",
+            "password": "pbkdf2_sha256$260000$hd0d0h2q$+4fHZcHgwSHPxITB3HZ7wlDbsjs="
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 8,
+        "fields": {
+            "username": "user8",
+            "email": "user8@example.com",
+            "phone_number": "09123450008",
+            "national_id": "1234567897",
+            "password": "pbkdf2_sha256$260000$hd0d0h2q$+4fHZcHgwSHPxITB3HZ7wlDbsjs="
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 9,
+        "fields": {
+            "username": "user9",
+            "email": "user9@example.com",
+            "phone_number": "09123450009",
+            "national_id": "1234567898",
+            "password": "pbkdf2_sha256$260000$hd0d0h2q$+4fHZcHgwSHPxITB3HZ7wlDbsjs="
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 10,
+        "fields": {
+            "username": "user10",
+            "email": "user10@example.com",
+            "phone_number": "09123450010",
+            "national_id": "1234567899",
+            "password": "pbkdf2_sha256$260000$hd0d0h2q$+4fHZcHgwSHPxITB3HZ7wlDbsjs="
+        }
+    },
+    {
+        "model": "questions.tag",
+        "pk": 1,
+        "fields": {
+            "name": "Python"
+        }
+    },
+    {
+        "model": "questions.tag",
+        "pk": 2,
+        "fields": {
+            "name": "Django"
+        }
+    },
+    {
+        "model": "questions.tag",
+        "pk": 3,
+        "fields": {
+            "name": "JavaScript"
+        }
+    },
+    {
+        "model": "questions.tag",
+        "pk": 4,
+        "fields": {
+            "name": "HTML"
+        }
+    },
+    {
+        "model": "questions.tag",
+        "pk": 5,
+        "fields": {
+            "name": "CSS"
+        }
+    },
+    {
+        "model": "questions.tag",
+        "pk": 6,
+        "fields": {
+            "name": "React"
+        }
+    },
+    {
+        "model": "questions.tag",
+        "pk": 7,
+        "fields": {
+            "name": "Vue"
+        }
+    },
+    {
+        "model": "questions.tag",
+        "pk": 8,
+        "fields": {
+            "name": "SQL"
+        }
+    },
+    {
+        "model": "questions.tag",
+        "pk": 9,
+        "fields": {
+            "name": "NoSQL"
+        }
+    },
+    {
+        "model": "questions.tag",
+        "pk": 10,
+        "fields": {
+            "name": "Docker"
+        }
+    },
+    {
+        "model": "questions.question",
+        "pk": 1,
+        "fields": {
+            "title": "What is Django?",
+            "body": "Can someone explain what Django is?",
+            "created_at": "2024-10-18T12:00:00Z",
+            "updated_at": "2024-10-18T12:00:00Z",
+            "user": 1,
+            "tags": [2],
+            "upvoters": [2],
+            "downvoters": [3]
+        }
+    },
+    {
+        "model": "questions.question",
+        "pk": 2,
+        "fields": {
+            "title": "What is Python?",
+            "body": "Can someone explain what Python is?",
+            "created_at": "2024-10-18T12:10:00Z",
+            "updated_at": "2024-10-18T12:10:00Z",
+            "user": 2,
+            "tags": [1],
+            "upvoters": [3],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.question",
+        "pk": 3,
+        "fields": {
+            "title": "How to use React?",
+            "body": "Can someone explain how to use React?",
+            "created_at": "2024-10-18T12:20:00Z",
+            "updated_at": "2024-10-18T12:20:00Z",
+            "user": 3,
+            "tags": [6],
+            "upvoters": [1, 2],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.question",
+        "pk": 4,
+        "fields": {
+            "title": "What is Vue?",
+            "body": "Can someone explain what Vue is?",
+            "created_at": "2024-10-18T12:30:00Z",
+            "updated_at": "2024-10-18T12:30:00Z",
+            "user": 4,
+            "tags": [7],
+            "upvoters": [5],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.question",
+        "pk": 5,
+        "fields": {
+            "title": "What is HTML?",
+            "body": "Can someone explain what HTML is?",
+            "created_at": "2024-10-18T12:40:00Z",
+            "updated_at": "2024-10-18T12:40:00Z",
+            "user": 5,
+            "tags": [4],
+            "upvoters": [],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.question",
+        "pk": 6,
+        "fields": {
+            "title": "What is CSS?",
+            "body": "Can someone explain what CSS is?",
+            "created_at": "2024-10-18T12:50:00Z",
+            "updated_at": "2024-10-18T12:50:00Z",
+            "user": 6,
+            "tags": [5],
+            "upvoters": [],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.question",
+        "pk": 7,
+        "fields": {
+            "title": "How to use SQL?",
+            "body": "Can someone explain how to use SQL?",
+            "created_at": "2024-10-18T13:00:00Z",
+            "updated_at": "2024-10-18T13:00:00Z",
+            "user": 7,
+            "tags": [8],
+            "upvoters": [1],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.question",
+        "pk": 8,
+        "fields": {
+            "title": "What is NoSQL?",
+            "body": "Can someone explain what NoSQL is?",
+            "created_at": "2024-10-18T13:10:00Z",
+            "updated_at": "2024-10-18T13:10:00Z",
+            "user": 8,
+            "tags": [9],
+            "upvoters": [2],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.question",
+        "pk": 9,
+        "fields": {
+            "title": "How to use Docker?",
+            "body": "Can someone explain how to use Docker?",
+            "created_at": "2024-10-18T13:20:00Z",
+            "updated_at": "2024-10-18T13:20:00Z",
+            "user": 9,
+            "tags": [10],
+            "upvoters": [3],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.question",
+        "pk": 10,
+        "fields": {
+            "title": "How to deploy Django?",
+            "body": "Can someone explain how to deploy Django?",
+            "created_at": "2024-10-18T13:30:00Z",
+            "updated_at": "2024-10-18T13:30:00Z",
+            "user": 10,
+            "tags": [2],
+            "upvoters": [],
+            "downvoters": [1]
+        }
+    },
+    {
+        "model": "questions.answer",
+        "pk": 1,
+        "fields": {
+            "body": "Django is a web framework written in Python.",
+            "created_at": "2024-10-18T13:35:00Z",
+            "updated_at": "2024-10-18T13:35:00Z",
+            "user": 2,
+            "question": 1,
+            "upvoters": [1],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.answer",
+        "pk": 2,
+        "fields": {
+            "body": "Python is a popular programming language.",
+            "created_at": "2024-10-18T13:40:00Z",
+            "updated_at": "2024-10-18T13:40:00Z",
+            "user": 3,
+            "question": 2,
+            "upvoters": [2],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.answer",
+        "pk": 3,
+        "fields": {
+            "body": "React is a JavaScript library for building user interfaces.",
+            "created_at": "2024-10-18T13:45:00Z",
+            "updated_at": "2024-10-18T13:45:00Z",
+            "user": 4,
+            "question": 3,
+            "upvoters": [3],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.answer",
+        "pk": 4,
+        "fields": {
+            "body": "Vue is a progressive JavaScript framework.",
+            "created_at": "2024-10-18T13:50:00Z",
+            "updated_at": "2024-10-18T13:50:00Z",
+            "user": 5,
+            "question": 4,
+            "upvoters": [],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.answer",
+        "pk": 5,
+        "fields": {
+            "body": "HTML is the standard markup language for creating web pages.",
+            "created_at": "2024-10-18T13:55:00Z",
+            "updated_at": "2024-10-18T13:55:00Z",
+            "user": 6,
+            "question": 5,
+            "upvoters": [4],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.answer",
+        "pk": 6,
+        "fields": {
+            "body": "CSS is used to style HTML pages.",
+            "created_at": "2024-10-18T14:00:00Z",
+            "updated_at": "2024-10-18T14:00:00Z",
+            "user": 7,
+            "question": 6,
+            "upvoters": [],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.answer",
+        "pk": 7,
+        "fields": {
+            "body": "SQL is a standard language for managing databases.",
+            "created_at": "2024-10-18T14:05:00Z",
+            "updated_at": "2024-10-18T14:05:00Z",
+            "user": 8,
+            "question": 7,
+            "upvoters": [6],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.answer",
+        "pk": 8,
+        "fields": {
+            "body": "NoSQL is a type of database that doesn't use relational tables.",
+            "created_at": "2024-10-18T14:10:00Z",
+            "updated_at": "2024-10-18T14:10:00Z",
+            "user": 9,
+            "question": 8,
+            "upvoters": [5],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.answer",
+        "pk": 9,
+        "fields": {
+            "body": "Docker is a tool for containerizing applications.",
+            "created_at": "2024-10-18T14:15:00Z",
+            "updated_at": "2024-10-18T14:15:00Z",
+            "user": 10,
+            "question": 9,
+            "upvoters": [],
+            "downvoters": []
+        }
+    },
+    {
+        "model": "questions.answer",
+        "pk": 10,
+        "fields": {
+            "body": "To deploy Django, use tools like Docker and services like Heroku.",
+            "created_at": "2024-10-18T14:20:00Z",
+            "updated_at": "2024-10-18T14:20:00Z",
+            "user": 1,
+            "question": 10,
+            "upvoters": [2],
+            "downvoters": []
+        }
+    }
+]

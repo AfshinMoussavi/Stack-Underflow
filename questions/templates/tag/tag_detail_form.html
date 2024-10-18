@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Questions for Tag: <strong>{{ tag.name }}</strong></h2>
+
+        {% if questions %}
+            <div class="row">
+                {% for question in questions %}
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="{% url 'questions:question_detail' question.id %}" class="text-decoration-none text-primary">
+                                        {{ question.title }}
+                                    </a>
+                                </h5>
+                                <p class="card-text">Posted by: <strong>{{ question.user }}</strong></p>
+                                <p class="card-text"><small class="text-muted">Created at: {{ question.created_at }}</small></p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="alert alert-info" role="alert">
+                No questions found for this tag.
+            </div>
+        {% endif %}
+        
+        <div class="text-center mt-4">
+            <a href="{% url 'questions:question_list' %}" class="btn btn-secondary">Back to Questions List</a>
+        </div>
+    </div>
+{% endblock %}

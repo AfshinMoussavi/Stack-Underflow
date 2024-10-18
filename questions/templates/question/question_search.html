@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Search Questions</h2>
+
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Search Form</h5>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <div class="mt-3">
+                        <button type="submit" class="btn btn-success w-100">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        {% if questions %}
+            <h3 class="mt-4">Search Results:</h3>
+            <div class="list-group mt-3">
+                {% for question in questions %}
+                    <a href="{% url 'questions:question_detail' question.id %}" class="list-group-item list-group-item-action">
+                        {{ question.title }}
+                    </a>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="mt-4 text-center">
+                <p>No questions found. Please try a different search.</p>
+            </div>
+        {% endif %}
+    </div>
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="my-4 text-center">Register</h2>
+    <div class="card shadow-sm">
+        <div class="card-body p-4">
+            <form method="post">
+                {% csrf_token %}
+                {{ form|crispy }}  <!-- Use crispy forms for better styling -->
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-primary w-100">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="text-center mt-3">
+        <p>Already have an account? <a href="{% url 'users:login' %}">Login here</a></p>
+    </div>
+</div>
+{% endblock content %}

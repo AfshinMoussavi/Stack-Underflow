@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center my-4">Welcome to Stack Underflow</h1>
+    <h2 class="mb-4">Recent Questions (Last 5 Minutes)</h2>
+    {% if recent_questions %}
+        <div class="list-group">
+            {% for question in recent_questions %}
+                <a href="{% url 'questions:question_detail' question.id %}" class="list-group-item list-group-item-action">
+                    <h5 class="mb-1">{{ question.title }}</h5>
+                    <p class="mb-1">Posted by: {{ question.user }}</p>
+                    <small>Created at: {{ question.created_at|date:"Y-m-d H:i:s" }}</small>
+                </a>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="alert alert-info" role="alert">
+            No questions found in the last 5 minutes.
+        </div>
+    {% endif %}
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
